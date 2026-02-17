@@ -5,7 +5,9 @@ Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[
 
 
 
+
 @Traceability:
+
 
 
 
@@ -27,6 +29,8 @@ addNewWhileRunning_copy:Global.ProjectPlugin.[Project].value.documents.[davidAdd
 @Body:
 @Name:"addCheckScenario perform"
 addCheckScenario.perform( );
+@Name:"addCheckScenarioExcluded setDescription"
+addCheckScenarioExcluded.setDescription( );
 @Name:"addCheckScenario getName"
 addCheckScenario.getName( );
 @Name:"addCheckScenarioExcluded getName"
