@@ -1,0 +1,111 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[DigitalSignalTestGlobal].value.perform
+
+@Description:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Traceability:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@Name:
+DigitalSignalTestGlobal
+
+@Parameter:
+
+@Return:
+
+@Constant:
+a:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayInt64Msg].value.data.value.elementDictionary.[arrayInt64Body].value.elementDictionary.[array10Int64].value.elementDictionary.[i7].value
+Int32:Global.ScenarioRunner.[ScenarioLanguage].value.primitiveTypeDictionary.[System.Int32].value
+m:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayFloat64Msg].value
+p:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayInt64Msg].value.data.value.elementDictionary.[arrayInt64Body].value.elementDictionary.[array10Int64].value.elementDictionary.[i6].value
+s:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayInt64Msg].value.data.value.elementDictionary.[arrayInt64Body].value.elementDictionary.[array10Int64].value.elementDictionary.[i8].value
+v:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayFloat64Msg].value.data.value.elementDictionary.[arrayFloat64Body].value.elementDictionary.[array10Float64].value.elementDictionary.[i2].value
+
+@Var:
+amplitude:System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+index:System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+period:System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+shift:System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+
+@Body:
+@Name: "Assign index"
+index := 0;
+@Name: "Assign period"
+period := Int32.fromSignedInteger(p.getVal( ));
+@Name: "Assign amplitude"
+amplitude:= Int32.fromSignedInteger(a.getVal( ));
+@Name: "Assign shift"
+shift:= Int32.fromSignedInteger(s.getVal( ));
+@Name: "Loop"
+loop(9999999999999999, True)
+{
+@Name: "If"
+if(index!= 0)
+{
+@Name: "set element value"
+v.setVal(shift+ amplitude + 0.01);
+@Name: "send outgoing message"
+m.send( );
+@Name: "set element value"
+v.setVal(shift);
+@Name: "send outgoing message"
+m.send( );
+}
+else
+{
+@Name: "set element value"
+v.setVal(shift + 0.01);
+@Name: "send outgoing message"
+m.send( );
+@Name: "set element value"
+v.setVal(shift+ amplitude);
+@Name: "send outgoing message"
+m.send( );
+}
+@Name: "If"
+if(index = 0)
+{
+@Name: "Assign index"
+index := 1;
+}
+else
+{
+@Name: "Assign index"
+index := 0;
+}
+@Name: "Assign period"
+period := Int32.fromSignedInteger(p.getVal( ));
+@Name: "Assign amplitude"
+amplitude:= Int32.fromSignedInteger(a.getVal( ));
+@Name: "Assign shift"
+shift:= Int32.fromSignedInteger(s.getVal( ));
+@Name: "Sleep"
+Sleep(period * 1000, TimeMode.FromNow);
+}
+
+@EndBoby

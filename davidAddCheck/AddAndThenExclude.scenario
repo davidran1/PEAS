@@ -1,0 +1,30 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[AddAndThenExclude].value.perform
+
+@Description:
+
+
+
+@Traceability:
+
+
+
+@Name:
+AddAndThenExclude
+
+@Parameter:
+
+@Return:
+
+@Constant:
+addCheckScenario:Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addCheckScenario].value
+
+@Var:
+
+@Body:
+@Name:"addCheckScenario commit"
+( );
+@Name:"addCheckScenario commit"
+addCheckScenario.SvnPeasClient-commit( );
+
+@EndBody

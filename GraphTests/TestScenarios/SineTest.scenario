@@ -1,0 +1,54 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[SineTest].value.perform
+
+@Description:
+
+
+
+
+
+
+@Traceability:
+
+
+
+
+
+
+@Name:
+SineTest
+
+@Parameter:
+aPeriod:System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+bAmplitude:System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+cYShift:System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+dElement:Adi.Amf.AmfCs.Element.IMutableNumericElement`1[[System.Double, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AmfCs, Version=3.3.51.5, Culture=neutral, PublicKeyToken=null
+eIOutgoingMessage:Adi.Amf.AmfCs.Message.IOutgoingMessage, AmfCs, Version=3.3.51.5, Culture=neutral, PublicKeyToken=null
+
+@Return:
+
+@Constant:
+Double:Global.ScenarioRunner.[ScenarioLanguage].value.primitiveTypeDictionary.[System.Double].value
+f:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[listFloat64Msg].value
+Trigonometry:Global.MetricsPlugin.[MetricsPlugin].value.categoryDictionary.[MathLib].value.categoryDictionary.[Trigonometry].value
+
+@Var:
+index:System.Int32, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+
+@Body:
+@Name: "Assign index"
+index := 0;
+@Name: "Loop"
+loop(9999999999999999, True)
+{
+@Name: "set element value"
+dElement.setVal(cYShift+ bAmplitude*Trigonometry.sin(aPeriod*Double.fromUnsignedInteger(index)/10.0));
+@Name: "send outgoing message"
+eIOutgoingMessage.send( );
+@Name: "Assign index"
+index := index + 1;
+@Name: "Sleep"
+Sleep(aPeriod  / 10, TimeMode.FromNow);
+}
+
+@EndBoby

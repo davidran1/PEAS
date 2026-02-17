@@ -1,0 +1,28 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[GltStreamer].value.documents.[RestartManager].value.perform
+
+@Description:
+
+@Traceability:
+
+@Name:
+RestartManager
+
+@Parameter:
+
+@Return:
+
+@Constant:
+Manager:Global.IOStreamerPlugin.[Manager].value
+
+@Var:
+
+@Body:
+@Name: "Manager stop"
+Manager.stop( );
+@Name: "Manager start"
+Manager.start( );
+@Name: "Sleep"
+Sleep(1000, TimeMode.FromNow);
+
+@EndBoby

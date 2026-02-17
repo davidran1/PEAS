@@ -1,0 +1,39 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addCheckScenarioExcluded].value.perform
+
+@Description:
+
+
+
+@Traceability:
+
+
+
+@Name:
+addCheckScenarioExcluded
+
+@Parameter:
+
+@Return:
+
+@Constant:
+addCheckScenario:Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addCheckScenario].value
+addCheckScenarioExcluded:Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addCheckScenarioExcluded].value
+addNewOne:Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addNewOne].value
+addNewWhileRunning_copy:Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addNewWhileRunning_copy].value
+
+@Var:
+
+@Body:
+@Name:"addCheckScenario perform"
+addCheckScenario.perform( );
+@Name:"addCheckScenario getName"
+addCheckScenario.getName( );
+@Name:"addCheckScenarioExcluded getName"
+addCheckScenarioExcluded.getName( );
+@Name:"addNewOne getName"
+addNewOne.getName( );
+@Name:"addNewWhileRunning_copy getName"
+addNewWhileRunning_copy.getName( );
+
+@EndBody

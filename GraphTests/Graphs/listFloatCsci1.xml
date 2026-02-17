@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DynamicAction.xsd">
+	<abbreviationList />
+	<body>
+		<name>GraphContent</name>
+		<graphItems>
+			<tableFieldRecord>
+				<name>i0.currentVal</name>
+				<type>System.Double</type>
+				<color>#FF00B050</color>
+				<fieldReference>
+					<nameReference>Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci1].value.portsDictionaryAsService.[TestTriggerProtocol_Csci2Port].value.incomingMessageByNameDictionary.[arrayFloat64Msg].value.data.value.elementDictionary.[arrayFloat64Body].value.elementDictionary.[array10Float64].value.elementDictionary.[i0].value.currentVal</nameReference>
+				</fieldReference>
+			</tableFieldRecord>
+			<tableFieldRecord>
+				<name>i1.currentVal</name>
+				<type>System.Double</type>
+				<color>#FF0000FF</color>
+				<fieldReference>
+					<nameReference>Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci1].value.portsDictionaryAsService.[TestTriggerProtocol_Csci2Port].value.incomingMessageByNameDictionary.[arrayFloat64Msg].value.data.value.elementDictionary.[arrayFloat64Body].value.elementDictionary.[array10Float64].value.elementDictionary.[i1].value.currentVal</nameReference>
+				</fieldReference>
+			</tableFieldRecord>
+			<tableFieldRecord>
+				<name>i2.currentVal</name>
+				<type>System.Double</type>
+				<color>#FFFF0000</color>
+				<fieldReference>
+					<nameReference>Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci1].value.portsDictionaryAsService.[TestTriggerProtocol_Csci2Port].value.incomingMessageByNameDictionary.[arrayFloat64Msg].value.data.value.elementDictionary.[arrayFloat64Body].value.elementDictionary.[array10Float64].value.elementDictionary.[i2].value.currentVal</nameReference>
+				</fieldReference>
+			</tableFieldRecord>
+			<tableFieldRecord>
+				<name>i0.currentVal</name>
+				<type>System.Double</type>
+				<color>#FF000000</color>
+				<fieldReference>
+					<nameReference>Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayFloat64Msg].value.data.value.elementDictionary.[arrayFloat64Body].value.elementDictionary.[array10Float64].value.elementDictionary.[i0].value.currentVal</nameReference>
+				</fieldReference>
+			</tableFieldRecord>
+		</graphItems>
+	</body>
+</action>

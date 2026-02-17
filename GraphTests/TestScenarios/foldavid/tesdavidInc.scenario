@@ -1,0 +1,24 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[foldavid].value.documents.[tesdavidInc].value.perform
+
+@Description:
+
+@Traceability:
+
+@Name:
+tesdavidInc
+
+@Parameter:
+
+@Return:
+
+@Constant:
+DigitalSignalTestGlobal:Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[DigitalSignalTestGlobal].value
+
+@Var:
+
+@Body:
+@Name:"DigitalSignalTestGlobal p"
+DigitalSignalTestGlobal.perform( );
+
+@EndBody

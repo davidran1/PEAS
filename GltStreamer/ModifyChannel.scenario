@@ -1,0 +1,57 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[GltStreamer].value.documents.[ModifyChannel].value.perform
+
+@Description:
+
+
+
+
+
+
+
+@Traceability:
+
+
+
+
+
+
+
+@Name:
+ModifyChannel
+
+@Parameter:
+
+@Return:
+
+@Constant:
+Channel1:Global.IOStreamerPlugin.[Manager].value.readerList.[Reader1].value.channelList.[Channel1].value
+Manager:Global.IOStreamerPlugin.[Manager].value
+Reader1:Global.IOStreamerPlugin.[Manager].value.readerList.[Reader1].value
+RestartManager:Global.ProjectPlugin.[Project].value.documents.[GltStreamer].value.documents.[RestartManager].value.customPerform.value
+WaitForEndOfReading:Global.ProjectPlugin.[Project].value.documents.[GltStreamer].value.documents.[WaitForEndOfReading].value.customPerform.value
+
+@Var:
+localIp:System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+
+@Body:
+@Name: "RestartManager perform"
+RestartManager.perform( );
+@Name: "Reader1 openFile"
+Reader1.openFile('d:/Adi1/Trunk/Adi/Peas/Test/PeasTester/Project/GltStreamer/DataFiles/Partial146_150.pcap');
+@Name: "Channel1 startStreaming"
+Channel1.startStreaming( );
+@Name: "Reader1 startReading"
+Reader1.startReading( );
+@Name: "Wait until actual video"
+Sleep(15000, TimeMode.FromNow);
+@Name: "Assign localIp"
+localIp := Channel1.getLocalIp( );
+@Name: "Channel1 setAddresses"
+Channel1.setAddresses('10.0.0.51', 5001, '239.192.28.150', 6000, localIp, 5003, 10, '', 0);
+@Name: "Channel1 startStreaming"
+Channel1.startStreaming( );
+@Name: "WaitForEndOfReading perform"
+WaitForEndOfReading.perform( );
+
+@EndBoby

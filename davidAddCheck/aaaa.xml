@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<action xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DynamicAction.xsd">
+	<abbreviationList />
+	<body>
+		<name>TableContent</name>
+		<columnCount>5</columnCount>
+		<rowCount>8</rowCount>
+		<tableRecords>
+			<tableActionRecord>
+				<name>BasicTests.SvnPeasClient-commit</name>
+				<order>1</order>
+				<row>0</row>
+				<rowSpan>1</rowSpan>
+				<column>0</column>
+				<columnSpan>1</columnSpan>
+				<captionVisible>True</captionVisible>
+				<captionSize>14</captionSize>
+				<captionForeground>#FF000000</captionForeground>
+				<isEnabled>True</isEnabled>
+				<type>System.Void</type>
+				<actionReference>
+					<nameReference>Global.ProjectPlugin.[Project].value.documents.[GltStreamer].value.documents.[BasicTests].value.SvnPeasClient-commit</nameReference>
+				</actionReference>
+			</tableActionRecord>
+		</tableRecords>
+	</body>
+</action>

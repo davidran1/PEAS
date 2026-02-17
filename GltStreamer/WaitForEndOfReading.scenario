@@ -1,0 +1,26 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[GltStreamer].value.documents.[WaitForEndOfReading].value.perform
+
+@Description:
+
+@Traceability:
+
+@Name:
+WaitForEndOfReading
+
+@Parameter:
+
+@Return:
+
+@Constant:
+Reader1:Global.IOStreamerPlugin.[Manager].value.readerList.[Reader1].value
+
+@Var:
+
+@Body:
+@Name: "ResetEvents"
+ResetEvents({ Reader1.handleStateChange });
+@Name: "Wait For Reader State IDLE"
+Test(WaitForEvents({ Reader1.handleStateChange }, WaitMode.WaitAll, 60000, TimeMode.FromNow, Reader1.getRunStatus( )==RUN_STATUS.IDLE));
+
+@EndBoby

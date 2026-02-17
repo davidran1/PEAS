@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DynamicAction.xsd">
+	<name>Graphs</name>
+	<assembly>Adi.Peas.Project.ProjectLibrary.Layout.FileSystemFolder, ProjectLibrary, Version=2.1.1.0, Culture=neutral, PublicKeyToken=null</assembly>
+	<type>Adi.Peas.Project.ProjectLibrary.Layout.FileSystemFolder</type>
+	<properties>
+		<stringProperty>
+			<name>FolderName</name>
+			<assembly>System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+			<type>System.String</type>
+			<value>Graphs</value>
+		</stringProperty>
+		<valueProperty>
+			<name>IsPublished</name>
+			<assembly>System.Boolean, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+			<type>System.Boolean</type>
+			<value>True</value>
+		</valueProperty>
+	</properties>
+	<children>
+		<collectionProperty>
+			<name>DocumentCollection</name>
+			<assembly>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo, ProjectLibrary, Version=2.1.1.0, Culture=neutral, PublicKeyToken=null</assembly>
+			<type>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo</type>
+			<items>
+				<item>
+					<name>listFloatCsci1</name>
+					<assembly>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo, ProjectLibrary, Version=2.1.1.0, Culture=neutral, PublicKeyToken=null</assembly>
+					<type>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo</type>
+					<properties>
+						<stringProperty>
+							<name>DocumentName</name>
+							<assembly>System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+							<type>System.String</type>
+							<value>listFloatCsci1</value>
+						</stringProperty>
+						<stringProperty>
+							<name>DocumentTypeName</name>
+							<assembly>System.String, System.Private.CoreLib, Version=5.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+							<type>System.String</type>
+							<value>Adi.Peas.Gui.GraphGuiLibrary.Document.IGraphDocument, GraphGuiLibrary, Version=2.0.0.3, Culture=neutral, PublicKeyToken=null</value>
+						</stringProperty>
+					</properties>
+					<children />
+				</item>
+			</items>
+		</collectionProperty>
+	</children>
+</root>

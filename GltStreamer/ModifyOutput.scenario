@@ -1,0 +1,60 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[GltStreamer].value.documents.[ModifyOutput].value.perform
+
+@Description:
+
+
+
+
+
+
+
+
+
+
+@Traceability:
+
+
+
+
+
+
+
+
+
+
+@Name:
+ModifyOutput
+
+@Parameter:
+
+@Return:
+
+@Constant:
+Channel1:Global.IOStreamerPlugin.[Manager].value.readerList.[Reader1].value.channelList.[Channel1].value
+Manager:Global.IOStreamerPlugin.[Manager].value
+Reader1:Global.IOStreamerPlugin.[Manager].value.readerList.[Reader1].value
+RestartManager:Global.ProjectPlugin.[Project].value.documents.[GltStreamer].value.documents.[RestartManager].value.customPerform.value
+WaitForEndOfReading:Global.ProjectPlugin.[Project].value.documents.[GltStreamer].value.documents.[WaitForEndOfReading].value.customPerform.value
+
+@Var:
+
+@Body:
+@Name: "RestartManager perform"
+RestartManager.perform( );
+@Name: "Reader1 openFile"
+Reader1.openFile('d:/Adi1/Trunk/Adi/Peas/Test/PeasTester/Project/GltStreamer/DataFiles/Partial146_150.pcap');
+@Name: "Channel1 startStreaming"
+Channel1.startStreaming( );
+@Name: "Reader1 startReading"
+Reader1.startReading( );
+@Name: "Wait Until actual video"
+Sleep(15000, TimeMode.FromNow);
+@Name: "Channel1 setOutput"
+Channel1.setOutput('10.0.0.44', 6000 );
+@Name: "Channel1 startStreaming"
+Channel1.startStreaming( );
+@Name: "WaitForEndOfReading perform"
+WaitForEndOfReading.perform( );
+
+@EndBoby

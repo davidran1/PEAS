@@ -1,0 +1,24 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addNewOne].value.perform
+
+@Description:
+
+@Traceability:
+
+@Name:
+addNewOne
+
+@Parameter:
+
+@Return:
+
+@Constant:
+addNewOne:Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addNewOne].value
+
+@Var:
+
+@Body:
+@Name:"addNewOne setDescription"
+addNewOne.setDescription( );
+
+@EndBody

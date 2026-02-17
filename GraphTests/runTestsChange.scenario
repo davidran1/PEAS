@@ -1,0 +1,56 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[runTests].value.perform
+
+@Description:
+
+
+
+
+
+
+
+
+
+
+@Traceability:
+
+
+
+
+
+
+
+
+
+
+@Name:
+runTests
+
+@Parameter:
+
+@Return:
+
+@Constant:
+arrayFloat64Msg:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayFloat64Msg].value
+DigitalSignalTest:Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[DigitalSignalTest].value.customPerform.value
+i0:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayFloat64Msg].value.data.value.elementDictionary.[arrayFloat64Body].value.elementDictionary.[array10Float64].value.elementDictionary.[i0].value
+i1:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayFloat64Msg].value.data.value.elementDictionary.[arrayFloat64Body].value.elementDictionary.[array10Float64].value.elementDictionary.[i1].value
+i2:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[arrayFloat64Msg].value.data.value.elementDictionary.[arrayFloat64Body].value.elementDictionary.[array10Float64].value.elementDictionary.[i2].value
+SineTest:Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[SineTest].value.customPerform.value
+SpikeTest:Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[SpikeTest].value.customPerform.value
+
+@Var:
+
+@Body:
+@Name: "Schedule Action"
+SchedulePeriodicExecution(SineTest.perform(5000,1,1, i0.this( ), arrayFloat64Msg.this( )), 0, 0, 0, 0);
+@Name: "Schedule Action"
+SchedulePeriodicExecution(SineTest.perform(1,1,1, i0.this( ), arrayFloat64Msg.this( )), 'sin', 0, 0, 0);
+@Name: "Schedule Action"
+SchedulePeriodicExecution(DigitalSignalTest.perform( 5,100,10,i1.this( ), arrayFloat64Msg.this( )), 'dig', 0, 0, 0);
+@Name: "Schedule Action"
+SchedulePeriodicExecution(SpikeTest.perform(10,1,1, i2.this( ), arrayFloat64Msg.this( )), 'spike', 0, 0, 0);
+@Name: "Wait All Schedules"
+WaitScheduleExecutions(10000000000, TimeMode.FromNow);
+
+@EndBoby

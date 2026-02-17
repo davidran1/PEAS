@@ -1,0 +1,26 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[POKNJ].value.perform
+
+@Description:
+
+
+@Traceability:
+
+
+@Name:
+POKNJ
+
+@Parameter:
+
+@Return:
+
+@Constant:
+SineTest:Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[SineTest].value
+
+@Var:
+
+@Body:
+@Name:"SineTest perform"
+SineTest.perform( );
+
+@EndBody

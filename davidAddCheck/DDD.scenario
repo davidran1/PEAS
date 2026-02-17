@@ -1,0 +1,26 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[DDD].value.perform
+
+@Description:
+
+
+@Traceability:
+
+
+@Name:
+DDD
+
+@Parameter:
+
+@Return:
+
+@Constant:
+addCheckScenario:Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addCheckScenario].value
+
+@Var:
+
+@Body:
+@Name:"addCheckScenario perform"
+addCheckScenario.perform( );
+
+@EndBody

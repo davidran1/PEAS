@@ -1,0 +1,95 @@
+@Scenario:
+Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[DigitalSignalTest].value.perform
+
+@Description:
+
+
+
+
+
+
+
+
+
+
+
+@Traceability:
+
+
+
+
+
+
+
+
+
+
+
+@Name:
+DigitalSignalTest
+
+@Parameter:
+aPeriod:System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+bAmplitude:System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+cYShift:System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+dElement:Adi.Amf.AmfCs.Element.IMutableNumericElement`1[[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], AmfCs, Version=4.0.1.1, Culture=neutral, PublicKeyToken=null
+eIOutgoingMessage:Adi.Amf.AmfCs.Message.IOutgoingMessage, AmfCs, Version=4.0.1.1, Culture=neutral, PublicKeyToken=null
+
+@Return:
+
+@Constant:
+DigitalSignalTest:Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[TestScenarios].value.documents.[DigitalSignalTest].value
+Double:Global.ScenarioRunner.[ScenarioLanguage].value.primitiveTypeDictionary.[System.Double].value
+f:Global.Icd.[ICD].value.modulesDictionaryAsService.[Csci2].value.portsDictionaryAsService.[TestTriggerProtocol_Csci1Port].value.outgoingMessageByNameDictionary.[listFloat64Msg].value
+runTestsChange:Global.ProjectPlugin.[Project].value.documents.[GraphTests].value.documents.[runTestsChange].value
+Trigonometry:Global.MetricsPlugin.[MetricsPlugin].value.categoryDictionary.[MathLib].value.categoryDictionary.[Trigonometry].value
+
+@Var:
+index:System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+wave:System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e
+
+@Body:
+@Name:"Assign index"
+index := 0;
+@Name:"Loop"
+loop(9999999999999999, True)
+{
+@Name:"If"
+if(index!= 0)
+{
+@Name:"set element value"
+dElement.setVal(cYShift + bAmplitude);
+@Name:"send outgoing message"
+eIOutgoingMessage.send( );
+@Name:"set element value"
+dElement.setVal(cYShift);
+@Name:"send outgoing message"
+eIOutgoingMessage.send( );
+}
+else
+{
+@Name:"set element value"
+dElement.setVal(cYShift + 1);
+@Name:"send outgoing message"
+eIOutgoingMessage.send( );
+@Name:"set element value"
+dElement.setVal(cYShift + bAmplitude + 1);
+@Name:"send outgoing message"
+eIOutgoingMessage.send( );
+}
+@Name:"If"
+if(index = 0)
+{
+@Name:"Assign index"
+index := 1;
+}
+else
+{
+@Name:"Assign index"
+index := 0;
+}
+@Name:"Sleep"
+Sleep(aPeriod, TimeMode.FromNow);
+}
+
+@EndBody

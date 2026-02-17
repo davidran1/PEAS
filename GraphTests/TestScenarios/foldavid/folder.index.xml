@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="DynamicAction.xsd">
+	<name>foldavid</name>
+	<assembly>Adi.Peas.Project.ProjectLibrary.Layout.FileSystemFolder, ProjectLibrary, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+	<type>Adi.Peas.Project.ProjectLibrary.Layout.FileSystemFolder</type>
+	<properties>
+		<stringProperty>
+			<name>FolderName</name>
+			<assembly>System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+			<type>System.String</type>
+			<value>foldavid</value>
+		</stringProperty>
+		<valueProperty>
+			<name>IsPublished</name>
+			<assembly>System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+			<type>System.Boolean</type>
+			<value>True</value>
+		</valueProperty>
+	</properties>
+	<children>
+		<collectionProperty>
+			<name>DocumentCollection</name>
+			<assembly>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo, ProjectLibrary, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+			<type>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo</type>
+			<items>
+				<item>
+					<name>tesdavid</name>
+					<assembly>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo, ProjectLibrary, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+					<type>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo</type>
+					<properties>
+						<stringProperty>
+							<name>DocumentName</name>
+							<assembly>System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+							<type>System.String</type>
+							<value>tesdavid</value>
+						</stringProperty>
+						<stringProperty>
+							<name>DocumentTypeName</name>
+							<assembly>System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+							<type>System.String</type>
+							<value>Adi.Peas.Gui.TableGuiLibrary.Document.ITableDocument, TableGuiLibrary, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null</value>
+						</stringProperty>
+					</properties>
+					<children />
+				</item>
+				<item>
+					<name>tesdavidInc</name>
+					<assembly>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo, ProjectLibrary, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+					<type>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo</type>
+					<properties>
+						<stringProperty>
+							<name>DocumentName</name>
+							<assembly>System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+							<type>System.String</type>
+							<value>tesdavidInc</value>
+						</stringProperty>
+						<stringProperty>
+							<name>DocumentTypeName</name>
+							<assembly>System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+							<type>System.String</type>
+							<value>Adi.Peas.Script.ScenarioLibrary.Scenarios.IScenario, ScenarioLibrary, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null</value>
+						</stringProperty>
+					</properties>
+					<children />
+				</item>
+			</items>
+		</collectionProperty>
+	</children>
+</root>
