@@ -35,6 +35,8 @@ addCheckScenario.perform( );
 addCheckScenario.setDescription( );
 @Name:"addCheckScenario setDescription"
 addCheckScenario.setDescription( );
+@Name:"addCheckScenario setDescription"
+addCheckScenario.setDescription( );
 @Name:"addCheckScenarioExcluded setDescription"
 addCheckScenarioExcluded.setDescription( );
 @Name:"addCheckScenario getName"
