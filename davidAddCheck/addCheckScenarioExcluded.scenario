@@ -33,6 +33,8 @@ addNewWhileRunning_copy:Global.ProjectPlugin.[Project].value.documents.[davidAdd
 @Body:
 @Name:"addCheckScenario perform"
 addCheckScenario.perform( );
+@Name:"addCheckScenario perform"
+addCheckScenario.perform( );
 @Name:"addCheckScenario setFolder"
 addCheckScenario.setFolder( );
 @Name:"addCheckScenario setDescription"
