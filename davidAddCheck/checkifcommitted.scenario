@@ -13,9 +13,12 @@ checkifcommitted
 @Return:
 
 @Constant:
+addCheckScenario:Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[addCheckScenario].value
 
 @Var:
 
 @Body:
+@Name:"Perform Action"
+WaitForEvents({ addCheckScenario.handleVariableRenamed }, WaitMode.WaitAll, 0, TimeMode.FromNow);
 
 @EndBody
