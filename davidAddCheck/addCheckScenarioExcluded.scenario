@@ -8,7 +8,11 @@ Global.ProjectPlugin.[Project].value.documents.[davidAddCheck].value.documents.[
 
 
 
+
+
 @Traceability:
+
+
 
 
 
@@ -33,6 +37,10 @@ addNewWhileRunning_copy:Global.ProjectPlugin.[Project].value.documents.[davidAdd
 @Body:
 @Name:"addCheckScenario perform"
 addCheckScenario.perform( );
+@Name:"Perform Action"
+WaitForEvents({ addCheckScenario.handleVariableRenamed }, WaitMode.WaitAll, 0, TimeMode.FromNow);
+@Name:"Perform Action"
+WaitForEvents({ addCheckScenario.handleVariableRenamed }, WaitMode.WaitAll, 0, TimeMode.FromNow);
 @Name:"addCheckScenario perform"
 addCheckScenario.perform( );
 @Name:"addCheckScenario setFolder"

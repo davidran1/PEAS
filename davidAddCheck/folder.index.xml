@@ -124,6 +124,26 @@
 					<children />
 				</item>
 				<item>
+					<name>checkifcommitted</name>
+					<assembly>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo, ProjectLibrary, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null</assembly>
+					<type>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo</type>
+					<properties>
+						<stringProperty>
+							<name>DocumentName</name>
+							<assembly>System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+							<type>System.String</type>
+							<value>checkifcommitted</value>
+						</stringProperty>
+						<stringProperty>
+							<name>DocumentTypeName</name>
+							<assembly>System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e</assembly>
+							<type>System.String</type>
+							<value>Adi.Peas.Script.ScenarioLibrary.Scenarios.IScenario, ScenarioLibrary, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null</value>
+						</stringProperty>
+					</properties>
+					<children />
+				</item>
+				<item>
 					<name>DDD</name>
 					<assembly>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo, ProjectLibrary, Version=2.5.0.0, Culture=neutral, PublicKeyToken=null</assembly>
 					<type>Adi.Peas.Project.ProjectLibrary.Layout.Folder+DocumentInfo</type>
